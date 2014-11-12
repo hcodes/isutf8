@@ -22,6 +22,7 @@ console.log(isUtf8(fs.readFileSync('text.txt')));
 
 ## CLI
 `npm install isutf8 -g`
+
 `isutf8 mytext.txt`
 
 
