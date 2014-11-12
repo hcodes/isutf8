@@ -14,16 +14,19 @@
     "url": "git://github.com/hcodes/isutf8.git"
   },
   "keywords": [
-    "charset", "utf-8", "texts"
+    "charset", "utf-8", "text"
   ],
   "engines": {
     "node": ">= 0.10"
+  },
+  "dependencies": {
+    "commander": "2.x"
   },
   "devDependencies": {
     "mocha": "2.0.x",
     "chai": "1.x",
     "istanbul": "0.3.x",
-    "jscs": "^1.7.x",
+    "jscs": "1.7.x",
     "jshint": "2.x"
   },
   "scripts": {
