@@ -1,7 +1,7 @@
 {
   "name": "isutf8",
   "description": "Check if a Buffer is utf-8",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "author": {
     "name": "Denis Seleznev",
     "email": "hcodes@yandex.ru",
