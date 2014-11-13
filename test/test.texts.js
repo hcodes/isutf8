@@ -1,9 +1,10 @@
 var fs = require('fs'),
-    isUtf8 = require('../lib/isutf8');
-    var assert = require('chai').assert,
-    getText = function(id) {
-        return fs.readFileSync('./test/texts/' + id + '.txt');
-    }
+    isUtf8 = require('../lib/isutf8'),
+    assert = require('chai').assert;
+
+function getText(id) {
+    return fs.readFileSync('./test/texts/' + id + '.txt');
+}
 
 describe('Examples', function() {
     it('file windows1251', function() {

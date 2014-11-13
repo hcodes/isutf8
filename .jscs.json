@@ -2,8 +2,7 @@
     "excludeFiles": [
         ".*",
         "coverage",
-        "node_modules",
-        "test"
+        "node_modules"
     ],
     "requireCurlyBraces": ["if", "else", "for", "while", "do"],
     "requireSpaceAfterKeywords": ["do", "else"],
