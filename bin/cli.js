@@ -16,7 +16,7 @@ if(!process.argv[2]) {
 for(var i = 2; i < process.argv.length; i++) {
     var file = process.argv[i];
 
-    if(fs.existsSync(file)) {
+    if(fs.existsSync(file) && fs.statSync(file).isFile()) {
         if(isUtf8(fs.readFileSync(file))) {
             console.log(file + ' is UTF-8');
         } else {
