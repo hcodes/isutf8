@@ -25,6 +25,9 @@ console.log(isUtf8(fs.readFileSync('text.txt')));
 
 `isutf8 mytext.txt`
 
+`isutf8 mytext1.txt mytext2.txt mytext3.txt`
+
+
 
 ## License
 MIT License
