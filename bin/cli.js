@@ -9,13 +9,11 @@ program
     .usage('<file ...>')
     .parse(process.argv);
 
-if(!process.argv[2]) {
+if(!program.args.length) {
     program.help();
 }
 
-for(var i = 2; i < process.argv.length; i++) {
-    var file = process.argv[i];
-
+program.args.forEach(function(file) {
     if(fs.existsSync(file) && fs.statSync(file).isFile()) {
         if(isUtf8(fs.readFileSync(file))) {
             console.log(file + ' is UTF-8');
@@ -27,6 +25,6 @@ for(var i = 2; i < process.argv.length; i++) {
         console.log(file + ': No such file');
         exitCode = 1;
     }
-}
+});
 
 process.exit(exitCode);
