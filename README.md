@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/hcodes/isutf8.png?branch=master)](https://travis-ci.org/hcodes/isutf8)
 [![Coverage Status](https://img.shields.io/coveralls/hcodes/isutf8.svg?branch=master)](https://coveralls.io/r/hcodes/isutf8)
 [![NPM Version](http://img.shields.io/npm/v/isutf8.svg?style=flat)](https://www.npmjs.org/package/isutf8)
+[![Dependency Status](https://gemnasium.com/hcodes/typograf.svg)](https://gemnasium.com/hcodes/isutf8)
 [![NPM Downloads](https://img.shields.io/npm/dm/isutf8.svg?style=flat)](https://www.npmjs.org/package/isutf8)
 
 isutf8
