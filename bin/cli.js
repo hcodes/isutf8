@@ -17,13 +17,13 @@ if(!program.args.length) {
 program.args.forEach(function(file) {
     if(fs.existsSync(file) && fs.statSync(file).isFile()) {
         if(isUtf8(fs.readFileSync(file))) {
-            console.log(file + ' is UTF-8');
+            console.log(file + ' is utf-8');
         } else {
-            console.log(file + ' is NOT UTF-8');
+            console.error(file + ' is not utf-8');
             exitCode = 1;
         }
     } else {
-        console.log(file + ': No such file');
+        console.error(file + ': No such file');
         exitCode = 1;
     }
 });
