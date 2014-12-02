@@ -6,6 +6,7 @@ var fs = require('fs'),
     exitCode = 0;
 
 program
+    .version(require('../package.json').version)
     .usage('<file ...>')
     .parse(process.argv);
 
