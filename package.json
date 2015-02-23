@@ -1,7 +1,7 @@
 {
   "name": "isutf8",
   "description": "Check if a Buffer is utf-8",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "author": {
     "name": "Denis Seleznev",
     "email": "hcodes@yandex.ru",
@@ -14,7 +14,7 @@
       "type": "MIT",
       "url": "https://github.com/hcodes/isutf8/blob/master/LICENSE"
     }
-  ],  
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/hcodes/isutf8.git"
@@ -29,10 +29,10 @@
     "commander": "2.x"
   },
   "devDependencies": {
-    "mocha": "2.0.x",
-    "chai": "1.x",
+    "mocha": "2.1.x",
+    "chai": "2.x",
     "istanbul": "0.3.x",
-    "jscs": "1.8.x",
+    "jscs": "1.11.x",
     "jshint": "2.x"
   },
   "scripts": {
