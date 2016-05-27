@@ -1,10 +1,9 @@
+sudo: false
 language: node_js
 node_js:
-  - 0.10
-
-branches:
-  only:
-    - master
+  - 0.12
+  - 4
+  - 6
 
 after_success:
   - npm i coveralls
