@@ -31,4 +31,4 @@ console.log(isUtf8(fs.readFileSync('text.txt')));
 
 
 ## License
-[MIT License](./blob/master/LICENSE)
+[MIT License](./LICENSE)
