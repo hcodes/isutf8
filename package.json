@@ -1,7 +1,7 @@
 {
   "name": "isutf8",
   "description": "Check if a Buffer is utf-8",
-  "version": "1.0.11",
+  "version": "2.0.0",
   "author": {
     "name": "Denis Seleznev",
     "email": "hcodes@yandex.ru",
@@ -9,12 +9,7 @@
   },
   "main": "index.js",
   "homepage": "https://github.com/hcodes/isutf8",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/hcodes/isutf8/blob/master/LICENSE"
-    }
-  ],
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git://github.com/hcodes/isutf8.git"
@@ -23,26 +18,23 @@
     "charset", "utf-8", "utf8", "text", "encoding"
   ],
   "engines": {
-    "node": ">= 0.10"
-  },
-  "dependencies": {
-    "commander": "2.x"
+    "node": ">= 0.12"
   },
   "devDependencies": {
-    "mocha": "2.1.x",
-    "chai": "2.x",
-    "istanbul": "0.3.x",
-    "jscs": "1.11.x",
-    "jshint": "2.x"
+    "mocha": "2.x",
+    "chai": "3.x",
+    "istanbul": "0.4.x",
+    "eslint": "2.x"
   },
   "scripts": {
-    "test": "npm run-script jshint && npm run-script check-style && npm run-script unit-test-coverage",
-    "check-style": "./node_modules/.bin/jscs .",
-    "jshint": "./node_modules/.bin/jshint .",
+    "test": "npm run-script eslint && npm run-script unit-test-coverage",
+    "eslint": "./node_modules/.bin/eslint .",
     "unit-test": "./node_modules/.bin/mocha -u bdd -R spec --recursive test",
     "unit-test-coverage": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- -u bdd -R spec --recursive test"
   },
-  "bin": {
-    "isutf8": "./bin/cli.js"
-  }
+  "files": [
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ]
 }
