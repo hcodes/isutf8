@@ -1,6 +1,6 @@
-var fs = require('fs'),
-    isUtf8 = require('../lib/isutf8'),
-    assert = require('chai').assert;
+const fs = require('fs');
+const isUtf8 = require('../index');
+const assert = require('chai').assert;
 
 function getText(id) {
     return fs.readFileSync('./test/texts/' + id + '.txt');

@@ -17,18 +17,9 @@ Check if a Buffer is utf-8.
 var fs = require('fs'),
     isUtf8 = require('isutf8');
 
-console.log(isUtf8(fs.readFileSync('text.txt')));
+console.log(isUtf8(fs.readFileSync('text.txt'))); // boolean
 
 ```
-
-## CLI
-`npm install isutf8 -g`
-
-`isutf8 mytext.txt`
-
-`isutf8 mytext1.txt mytext2.txt mytext3.txt`
-
-
 
 ## License
 MIT License
