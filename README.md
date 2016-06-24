@@ -7,7 +7,7 @@
 isutf8
 ======
 
-Check if a Buffer is UTF-8.
+Quick check if a Buffer is UTF-8.
 
 ## Install
 `npm install isutf8`
