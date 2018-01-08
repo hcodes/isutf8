@@ -27,6 +27,10 @@
  * @returns {boolean}
  */
 function isUtf8(buf) {
+    if (!buf) {
+        return false;
+    }
+
     var i = 0, len = buf.length;
 
     while(i < len) {
@@ -74,7 +78,7 @@ function isUtf8(buf) {
         ) {
             i += 3;
 
-            continue;                        
+            continue;
         }
 
         // UTF8-4 = %xF0 %x90-BF 2( UTF8-tail )

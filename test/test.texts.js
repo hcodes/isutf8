@@ -1,3 +1,5 @@
+'use strict';
+
 const fs = require('fs');
 const isUtf8 = require('../index');
 const assert = require('chai').assert;
@@ -7,19 +9,24 @@ function getText(id) {
 }
 
 describe('Examples', function() {
-    it('file windows1251', function() {
+    it('windows1251', function() {
         assert.notOk(isUtf8(getText('win1251')));
     });
 
-    it('file koi8r', function() {
+    it('koi8r', function() {
         assert.notOk(isUtf8(getText('koi8r')));
     });
 
-    it('file utf8', function() {
+    it('utf8', function() {
         assert.ok(isUtf8(getText('utf8')));
     });
 
-    it('file ansi', function() {
+    it('ansi', function() {
         assert.ok(isUtf8(getText('ansi')));
+    });
+
+    it('null, undefined', function() {
+        assert.notOk(isUtf8(null));
+        assert.notOk(isUtf8());
     });
 });
