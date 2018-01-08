@@ -14,8 +14,10 @@ Quick check if a Buffer is UTF-8.
 
 ## Usage
 ```JavaScript
-var fs = require('fs');
-var isUtf8 = require('isutf8');
+'use strict';
+
+const fs = require('fs');
+const isUtf8 = require('isutf8');
 
 console.log(isUtf8(fs.readFileSync('text.txt'))); // boolean
 
