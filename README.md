@@ -13,13 +13,14 @@ Quick check if a Buffer is UTF-8.
 `npm install isutf8`
 
 ## Usage
-```JavaScript
+```js
 'use strict';
 
-const fs = require('fs');
 const isUtf8 = require('isutf8');
 
-console.log(isUtf8(fs.readFileSync('text.txt'))); // boolean
+const buf = Buffer.from([0xd0, 0x90]);
+
+console.log(isUtf8(buf)); // => true
 
 ```
 
