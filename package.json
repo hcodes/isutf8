@@ -1,7 +1,7 @@
 {
   "name": "isutf8",
   "description": "Check if a Buffer is utf-8",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "author": {
     "name": "Denis Seleznev",
     "email": "hcodes@yandex.ru",
@@ -25,10 +25,10 @@
     "node": ">= 0.12"
   },
   "devDependencies": {
-    "mocha": "4.x",
-    "chai": "4.x",
-    "istanbul": "0.4.x",
-    "eslint": "4.x"
+    "chai": "^4.2.0",
+    "eslint": "^5.12.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0"
   },
   "scripts": {
     "test": "npm run-script eslint && npm run-script unit-test-coverage",
