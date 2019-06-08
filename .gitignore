@@ -1,5 +1,5 @@
 benchmark/
 node_modules/
 libs/
-coverage/
+.nyc_output/
 npm-debug.log

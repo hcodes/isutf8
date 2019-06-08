@@ -1,7 +1,7 @@
 {
   "name": "isutf8",
   "description": "Check if a Buffer is utf-8",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "author": {
     "name": "Denis Seleznev",
     "email": "hcodes@yandex.ru",
@@ -26,15 +26,14 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "eslint": "^5.12.0",
-    "istanbul": "^0.4.5",
-    "mocha": "^5.2.0"
+    "eslint": "^5.16.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1"
   },
   "scripts": {
-    "test": "npm run-script eslint && npm run-script unit-test-coverage",
+    "test": "npm run-script eslint && npm run-script unit-test",
     "eslint": "./node_modules/.bin/eslint .",
-    "unit-test": "./node_modules/.bin/mocha -u bdd -R spec --recursive test",
-    "unit-test-coverage": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- -u bdd -R spec --recursive test"
+    "unit-test": "nyc mocha -u bdd -R spec --recursive test"
   },
   "files": [
     "index.js",

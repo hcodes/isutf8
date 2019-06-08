@@ -1,5 +1,8 @@
 # Changelog
 
+## v2.0.4
+- Updated dev deps in package.json.
+
 ## v2.0.3
 - Updated dev deps in package.json.
 
