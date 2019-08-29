@@ -21,9 +21,9 @@
 */
 
 /**
- * Check if a Buffer is utf-8
+ * Check if a Node.js Buffer or Uint8Array is utf-8
  *
- * @param {Buffer} buf
+ * @param {Buffer|Uint8Array} buf
  * @returns {boolean}
  */
 function isUtf8(buf) {

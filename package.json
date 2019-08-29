@@ -1,7 +1,7 @@
 {
   "name": "isutf8",
-  "description": "Check if a Buffer is utf-8",
-  "version": "2.0.4",
+  "description": "Check if a Node.js Buffer or Uint8Array is utf-8",
+  "version": "2.1.0",
   "author": {
     "name": "Denis Seleznev",
     "email": "hcodes@yandex.ru",
@@ -19,15 +19,17 @@
     "utf-8",
     "utf8",
     "text",
-    "encoding"
+    "encoding",
+    "Buffer",
+    "Uint8Array"
   ],
   "engines": {
     "node": ">= 0.12"
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "eslint": "^6.0.1",
-    "mocha": "^6.1.4",
+    "eslint": "^6.2.2",
+    "mocha": "^6.2.0",
     "nyc": "^14.1.1"
   },
   "scripts": {
