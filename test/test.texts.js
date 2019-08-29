@@ -5,27 +5,27 @@ const isUtf8 = require('../index');
 const assert = require('chai').assert;
 
 function getText(id) {
-    return fs.readFileSync('./test/texts/' + id + '.txt');
+    return fs.readFileSync(`./test/texts/${id}.txt`);
 }
 
-describe('Examples', function() {
-    it('windows1251', function() {
+describe('Examples', () => {
+    it('windows1251', () => {
         assert.notOk(isUtf8(getText('win1251')));
     });
 
-    it('koi8r', function() {
+    it('koi8r', () => {
         assert.notOk(isUtf8(getText('koi8r')));
     });
 
-    it('utf8', function() {
+    it('utf8', () => {
         assert.ok(isUtf8(getText('utf8')));
     });
 
-    it('ansi', function() {
+    it('ansi', () => {
         assert.ok(isUtf8(getText('ansi')));
     });
 
-    it('null, undefined', function() {
+    it('null, undefined', () => {
         assert.notOk(isUtf8(null));
         assert.notOk(isUtf8());
     });
