@@ -1,5 +1,2 @@
-benchmark/
 node_modules/
-libs/
-.nyc_output/
 npm-debug.log
