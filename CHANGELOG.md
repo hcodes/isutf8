@@ -1,5 +1,9 @@
 # Changelog
 
+## v3.0.0
+- Add typings for TypeScript.
+- Drop support for old Node.js < 10.
+
 ## v2.1.0
 - Add support for `Uint8Array`.
 - Updated dev deps in package.json.

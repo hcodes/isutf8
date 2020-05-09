@@ -1,13 +1,13 @@
 {
   "name": "isutf8",
   "description": "Check if a Node.js Buffer or Uint8Array is utf-8",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "author": {
     "name": "Denis Seleznev",
     "email": "hcodes@yandex.ru",
     "url": "https://github.com/hcodes"
   },
-  "main": "index.js",
+  "main": "lib/index.js",
   "homepage": "https://github.com/hcodes/isutf8",
   "license": "MIT",
   "repository": {
@@ -24,22 +24,31 @@
     "Uint8Array"
   ],
   "engines": {
-    "node": ">= 0.12"
+    "node": ">= 10.12.0"
   },
   "devDependencies": {
-    "chai": "^4.2.0",
-    "eslint": "^6.2.2",
-    "mocha": "^6.2.0",
-    "nyc": "^14.1.1"
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.13.5",
+    "@typescript-eslint/eslint-plugin": "^2.31.0",
+    "@typescript-eslint/parser": "^2.31.0",
+    "eslint": "^7.0.0",
+    "jest": "^26.0.1",
+    "ts-jest": "^25.5.0",
+    "typescript": "^3.8.3"
   },
   "scripts": {
-    "test": "npm run-script eslint && npm run-script unit-test",
-    "eslint": "./node_modules/.bin/eslint .",
-    "unit-test": "nyc mocha -u bdd -R spec --recursive test"
+    "test": "npm run eslint && npm run unit",
+    "eslint": "eslint --ext .ts",
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -rf lib",
+    "compile": "tsc -p ./tsconfig.json",
+    "unit": "jest --config ./jest.config.js"
   },
+  "types": "lib/index.d.ts",
   "files": [
-    "index.js",
     "LICENSE",
-    "README.md"
+    "README.md",
+    "lib/index.d.ts",
+    "lib/index.js"
   ]
 }
