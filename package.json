@@ -7,7 +7,8 @@
     "email": "hcodes@yandex.ru",
     "url": "https://github.com/hcodes"
   },
-  "main": "lib/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
   "homepage": "https://github.com/hcodes/isutf8",
   "license": "MIT",
   "repository": {
@@ -27,28 +28,33 @@
     "node": ">= 10.12.0"
   },
   "devDependencies": {
-    "@types/jest": "^25.2.1",
-    "@types/node": "^13.13.5",
-    "@typescript-eslint/eslint-plugin": "^2.31.0",
-    "@typescript-eslint/parser": "^2.31.0",
-    "eslint": "^7.0.0",
-    "jest": "^26.0.1",
-    "ts-jest": "^25.5.0",
-    "typescript": "^3.8.3"
+    "@rollup/plugin-typescript": "^6.0.0",
+    "@types/jest": "^26.0.14",
+    "@types/node": "^14.11.2",
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0",
+    "eslint": "^7.9.0",
+    "jest": "^26.4.2",
+    "rollup": "^2.28.1",
+    "rollup-plugin-typescript": "^1.0.1",
+    "ts-jest": "^26.4.0",
+    "tslib": "^2.0.1",
+    "typescript": "^4.0.3"
   },
   "scripts": {
     "test": "npm run eslint && npm run unit",
     "eslint": "eslint --ext .ts",
-    "build": "npm run clean && npm run compile",
-    "clean": "rm -rf lib",
-    "compile": "tsc -p ./tsconfig.json",
-    "unit": "jest --config ./jest.config.js"
-  },
-  "types": "lib/index.d.ts",
+    "clean": "rm -rf dist",
+    "unit": "jest --config ./jest.config.js",
+    "build": "npm run clean && npm run build:esm && npm run build:common",
+    "build:esm": "rollup src/index.ts --config rollup.config.js --file dist/index.esm.js --format esm",
+    "build:common": "rollup src/index.ts --config rollup.config.js --file dist/index.js --format commonjs --exports=auto"  },
+  "types": "index.d.ts",
   "files": [
     "LICENSE",
     "README.md",
     "lib/index.d.ts",
     "lib/index.js"
-  ]
+  ],
+  "dependencies": {}
 }
