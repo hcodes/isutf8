@@ -12,7 +12,7 @@ Quick check if a Node.js Buffer or Uint8Array is UTF-8.
 
 ## Usage
 
-### commonjs
+### CommonJS
 ```js
 'use strict';
 
