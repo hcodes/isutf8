@@ -1,7 +1,7 @@
 {
   "name": "isutf8",
   "description": "Check if a Node.js Buffer or Uint8Array is utf-8",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "author": {
     "name": "Denis Seleznev",
     "email": "hcodes@yandex.ru",
@@ -48,13 +48,15 @@
     "unit": "jest --config ./jest.config.js",
     "build": "npm run clean && npm run build:esm && npm run build:common",
     "build:esm": "rollup src/index.ts --config rollup.config.js --file dist/index.esm.js --format esm",
-    "build:common": "rollup src/index.ts --config rollup.config.js --file dist/index.js --format commonjs --exports=auto"  },
+    "build:common": "rollup src/index.ts --config rollup.config.js --file dist/index.js --format commonjs --exports=auto"
+  },
   "types": "index.d.ts",
   "files": [
     "LICENSE",
     "README.md",
-    "lib/index.d.ts",
-    "lib/index.js"
+    "dist/index.js",
+    "dist/index.esm.js",
+    "index.d.ts"
   ],
   "dependencies": {}
 }
