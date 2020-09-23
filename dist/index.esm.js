@@ -1,4 +1,3 @@
-"use strict";
 /*
     https://tools.ietf.org/html/rfc3629
 
@@ -19,7 +18,6 @@
 
     UTF8-tail = %x80-BF
 */
-Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * Check if a Node.js Buffer or Uint8Array is UTF-8.
  */
@@ -77,4 +75,5 @@ function isUtf8(buf) {
     }
     return true;
 }
-exports.default = isUtf8;
+
+export default isUtf8;

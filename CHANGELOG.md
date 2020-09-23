@@ -1,5 +1,8 @@
 # Changelog
 
+## v3.1.0
+- Add support for ES modules.
+
 ## v3.0.0
 - Add typings for TypeScript.
 - Drop support for old Node.js < 10.
