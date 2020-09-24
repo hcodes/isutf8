@@ -6,10 +6,11 @@
         "allowJs": false,
         "declaration": true,
         "target": "es6",
-        "outDir": "./lib",
+        "outDir": "./dist",
         "lib": [
             "es6",
         ],
+        "esModuleInterop": true,
         "strict": true,
         "alwaysStrict": true,
         "strictFunctionTypes": true,

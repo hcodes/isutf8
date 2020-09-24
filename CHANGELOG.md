@@ -1,4 +1,8 @@
+
 # Changelog
+
+## v3.1.1
+- Fixes for typings.
 
 ## v3.1.0
 - Add support for ES modules.
