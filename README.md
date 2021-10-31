@@ -1,6 +1,7 @@
 [![NPM Version](https://img.shields.io/npm/v/isutf8.svg?style=flat)](https://www.npmjs.org/package/isutf8)
 [![NPM Downloads](https://img.shields.io/npm/dm/isutf8.svg?style=flat)](https://www.npmjs.org/package/isutf8)
-[![Dependency Status](https://img.shields.io/david/hcodes/isutf8.svg?style=flat)](https://david-dm.org/hcodes/isutf8)
+[![Bundlephobia](https://badgen.net/bundlephobia/minzip/isutf8)](https://bundlephobia.com/result?p=isutf8)
+[![install size](https://packagephobia.com/badge?p=isutf8)](https://packagephobia.com/result?p=isutf8)
 
 isutf8
 ======
