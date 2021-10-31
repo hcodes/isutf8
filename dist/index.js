@@ -27,8 +27,8 @@ function isUtf8(buf) {
     if (!buf) {
         return false;
     }
-    let i = 0;
-    const len = buf.length;
+    var i = 0;
+    var len = buf.length;
     while (i < len) {
         // UTF8-1 = %x00-7F
         if (buf[i] <= 0x7F) {
