@@ -6,7 +6,7 @@
 isutf8
 ======
 
-Quick check if a Node.js Buffer or Uint8Array is UTF-8.
+Quick check if a Node.js Buffer or Uint8Array is valid UTF-8.
 
 ## Install
 `npm install isutf8`
@@ -15,17 +15,15 @@ Quick check if a Node.js Buffer or Uint8Array is UTF-8.
 
 ### CommonJS
 ```js
-'use strict';
-
 const isUtf8 = require('isutf8');
 
 const buf = Buffer.from([0xd0, 0x90]);
-console.log(isUtf8(buf)); // => true
+console.log(isUtf8(buf)); // => boolean
 
 // or 
 
 const arr = new Uint8Array([0xd0, 0x90]);
-console.log(isUtf8(arr)); // => true
+console.log(isUtf8(arr)); // => boolean
 
 ```
 
@@ -34,12 +32,12 @@ console.log(isUtf8(arr)); // => true
 import isUtf8 from 'isutf8';
 
 const buf = Buffer.from([0xd0, 0x90]);
-console.log(isUtf8(buf)); // => true
+console.log(isUtf8(buf)); // => boolean
 
 // or 
 
 const arr = new Uint8Array([0xd0, 0x90]);
-console.log(isUtf8(arr)); // => true
+console.log(isUtf8(arr)); // => boolean
 ```
 
 ## License
