@@ -1,7 +1,7 @@
 {
   "name": "isutf8",
   "description": "Check if a Node.js Buffer or Uint8Array is UTF-8",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "author": {
     "name": "Denis Seleznev",
     "email": "hcodes@yandex.ru",
@@ -18,8 +18,15 @@
   "keywords": [
     "charset",
     "utf-8",
+    "is utf",
+    "is utf-8",
+    "is utf8",
     "utf8",
+    "unicode",
+    "is unicode",
     "text",
+    "check",
+    "validate",
     "encoding",
     "Buffer",
     "Uint8Array"
@@ -28,17 +35,17 @@
     "node": ">= 12"
   },
   "devDependencies": {
-    "@rollup/plugin-typescript": "^11.1.0",
-    "@types/jest": "^29.5.1",
-    "@typescript-eslint/eslint-plugin": "^5.59.2",
-    "@typescript-eslint/parser": "^5.59.2",
-    "del-cli": "^5.0.0",
-    "eslint": "^8.39.0",
-    "jest": "^29.5.0",
-    "rollup": "^3.21.3",
-    "ts-jest": "^29.1.0",
-    "tslib": "^2.5.0",
-    "typescript": "^5.0.4"
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/jest": "^29.5.12",
+    "@typescript-eslint/eslint-plugin": "^8.3.0",
+    "@typescript-eslint/parser": "^8.3.0",
+    "del-cli": "^5.1.0",
+    "eslint": "^8.3.0",
+    "jest": "^29.7.0",
+    "rollup": "^4.21.1",
+    "ts-jest": "^29.2.5",
+    "tslib": "^2.7.0",
+    "typescript": "^5.5.4"
   },
   "scripts": {
     "test": "npm run eslint && npm run unit",
