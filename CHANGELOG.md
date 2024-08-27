@@ -1,6 +1,10 @@
 
 # Changelog
 
+## v4.0.1
+- Updated README.md.
+- Updated dev deps in package.json.
+
 ## v4.0.0
 - Drop support for old Node.js < 12.
 - Updated dev deps in package.json.
