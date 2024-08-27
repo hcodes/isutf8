@@ -27,8 +27,8 @@ export default function isUtf8(buf?: Buffer | Uint8Array): boolean {
         return false;
     }
 
-    let i = 0;
-    const len = buf.length;
+    var i = 0;
+    var len = buf.length;
 
     while(i < len) {
         // UTF8-1 = %x00-7F
