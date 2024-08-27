@@ -8,6 +8,11 @@ isutf8
 
 Quick check if a Node.js Buffer or Uint8Array is valid UTF-8.
 
+## Advantages
+- Ultra-small package size
+- No dependencies
+- No pre-compilation
+
 ## Install
 `npm install isutf8`
 
