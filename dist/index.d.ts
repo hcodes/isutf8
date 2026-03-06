@@ -1,4 +1,3 @@
-/// <reference types="node" />
 /**
  * Check if a Node.js Buffer or Uint8Array is UTF-8.
  */

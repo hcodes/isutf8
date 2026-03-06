@@ -1,7 +1,7 @@
 {
   "name": "isutf8",
   "description": "Check if a Node.js Buffer or Uint8Array is UTF-8",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "author": {
     "name": "Denis Seleznev",
     "email": "hcodes@yandex.ru",
@@ -35,20 +35,22 @@
     "node": ">= 12"
   },
   "devDependencies": {
-    "@rollup/plugin-typescript": "^11.1.6",
-    "@types/jest": "^29.5.12",
-    "@typescript-eslint/eslint-plugin": "^8.3.0",
-    "@typescript-eslint/parser": "^8.3.0",
-    "del-cli": "^5.1.0",
-    "eslint": "^8.3.0",
-    "jest": "^29.7.0",
-    "rollup": "^4.21.1",
-    "ts-jest": "^29.2.5",
-    "tslib": "^2.7.0",
-    "typescript": "^5.5.4"
+    "@eslint/js": "^9.39.3",
+    "@rollup/plugin-typescript": "^12.3.0",
+    "@types/jest": "^30.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.56.1",
+    "@typescript-eslint/parser": "^8.56.1",
+    "del-cli": "^7.0.0",
+    "eslint": "^9.39.3",
+    "jest": "^30.2.0",
+    "rollup": "^4.59.0",
+    "ts-jest": "^29.4.6",
+    "tslib": "^2.8.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.56.1"
   },
   "scripts": {
-    "test": "npm run eslint && npm run unit",
+    "test": "npm run eslint && npm run typecheck && npm run unit",
     "eslint": "eslint --ext .ts",
     "clean": "del-cli dist/*",
     "unit": "jest --config ./jest.config.js",
