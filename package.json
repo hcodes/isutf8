@@ -60,5 +60,10 @@
     "LICENSE",
     "README.md",
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "benchmark": "^2.1.4",
+    "utf-8-validate": "^6.0.4",
+    "utf8-check": "^0.0.2"
+  }
 }
