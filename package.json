@@ -1,7 +1,8 @@
 {
   "name": "isutf8",
   "description": "Check if a Node.js Buffer or Uint8Array is UTF-8",
-  "version": "4.0.2",
+  "version": "4.0.3",
+  "deprecated": "Use isUtf8 from node:buffer in modern Node.js, or TextDecoder with { fatal: true } in browsers.",
   "author": {
     "name": "Denis Seleznev",
     "email": "hcodes@yandex.ru",
@@ -35,19 +36,21 @@
     "node": ">= 12"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.3",
+    "@eslint/js": "^10.0.1",
     "@rollup/plugin-typescript": "^12.3.0",
     "@types/jest": "^30.0.0",
-    "@typescript-eslint/eslint-plugin": "^8.56.1",
-    "@typescript-eslint/parser": "^8.56.1",
+    "@types/node": "^22.20.2",
+    "@typescript-eslint/eslint-plugin": "^8.70.0",
+    "@typescript-eslint/parser": "^8.70.0",
     "del-cli": "^7.0.0",
-    "eslint": "^9.39.3",
-    "jest": "^30.2.0",
-    "rollup": "^4.59.0",
-    "ts-jest": "^29.4.6",
+    "eslint": "^10.10.0",
+    "globals": "^17.12.0",
+    "jest": "^30.5.1",
+    "rollup": "^4.63.1",
+    "ts-jest": "^29.4.12",
     "tslib": "^2.8.1",
-    "typescript": "^5.9.3",
-    "typescript-eslint": "^8.56.1"
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.70.0"
   },
   "scripts": {
     "test": "npm run eslint && npm run typecheck && npm run unit",

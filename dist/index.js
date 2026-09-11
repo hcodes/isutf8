@@ -27,7 +27,9 @@ function isUtf8(buf) {
     if (!buf) {
         return false;
     }
+    // eslint-disable-next-line no-var
     var i = 0;
+    // eslint-disable-next-line no-var
     var len = buf.length;
     while (i < len) {
         // UTF8-1 = %x00-7F

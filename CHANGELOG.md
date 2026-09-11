@@ -1,6 +1,13 @@
 
 # Changelog
 
+## v4.0.3
+
+- Added deprecation notices to package.json and README.md.
+- Documented migration to Node.js's built-in `isUtf8` and browser `TextDecoder`.
+- Clarified API behavior and verified usage examples in README.md.
+- Updated development dependencies and TypeScript 6 configuration.
+
 ## v4.0.2
 - Updated dev deps in package.json.
 
